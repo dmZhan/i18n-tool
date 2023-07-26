@@ -1,5 +1,5 @@
 {
-  "name": "pkg-name",
+  "name": "i18n-tool",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@8.6.0",
@@ -7,12 +7,12 @@
   "author": "DogMan Zhan <zqj1130123899@gmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/dmZhan",
-  "homepage": "https://github.com/dmZhan/pkg-name#readme",
+  "homepage": "https://github.com/dmZhan/i18n-tool#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmZhan/pkg-name.git"
+    "url": "git+https://github.com/dmZhan/i18n-tool.git"
   },
-  "bugs": "https://github.com/dmZhan/pkg-name/issues",
+  "bugs": "https://github.com/dmZhan/i18n-tool/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -43,8 +43,11 @@
     "prepublishOnly": "nr build",
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
-    "test": "vitest",
+    "test": "vitest -w -u",
     "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.4",
@@ -54,6 +57,8 @@
     "bumpp": "^9.1.0",
     "eslint": "^8.41.0",
     "esno": "^0.16.3",
+    "fast-glob": "^3.3.1",
+    "fs-extra": "^11.1.1",
     "lint-staged": "^13.2.2",
     "pnpm": "^8.6.0",
     "rimraf": "^5.0.1",
