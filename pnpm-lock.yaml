@@ -21,6 +21,9 @@ importers:
       '@antfu/utils':
         specifier: ^0.7.4
         version: 0.7.4
+      '@types/fs-extra':
+        specifier: ^11.0.1
+        version: registry.npmmirror.com/@types/fs-extra@11.0.1
       '@types/node':
         specifier: ^18.16.16
         version: 18.16.16
@@ -4331,6 +4334,29 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  registry.npmmirror.com/@types/fs-extra@11.0.1:
+    resolution: {integrity: sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/fs-extra/-/fs-extra-11.0.1.tgz}
+    name: '@types/fs-extra'
+    version: 11.0.1
+    dependencies:
+      '@types/jsonfile': registry.npmmirror.com/@types/jsonfile@6.1.1
+      '@types/node': registry.npmmirror.com/@types/node@18.16.16
+    dev: true
+
+  registry.npmmirror.com/@types/jsonfile@6.1.1:
+    resolution: {integrity: sha512-GSgiRCVeapDN+3pqA35IkQwasaCh/0YFH5dEF6S88iDvEn901DjOeH3/QPY+XYP1DFzDZPvIvfeEgk+7br5png==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/jsonfile/-/jsonfile-6.1.1.tgz}
+    name: '@types/jsonfile'
+    version: 6.1.1
+    dependencies:
+      '@types/node': registry.npmmirror.com/@types/node@18.16.16
+    dev: true
+
+  registry.npmmirror.com/@types/node@18.16.16:
+    resolution: {integrity: sha512-NpaM49IGQQAUlBhHMF82QH80J08os4ZmyF9MkpCzWAGuOHqE4gTEbhzd7L3l5LmWuZ6E0OiC1FweQ4tsiW35+g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/-/node-18.16.16.tgz}
+    name: '@types/node'
+    version: 18.16.16
+    dev: true
 
   registry.npmmirror.com/ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ansi-regex/-/ansi-regex-5.0.1.tgz}
